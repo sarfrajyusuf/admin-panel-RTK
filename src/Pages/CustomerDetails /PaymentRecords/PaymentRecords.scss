@@ -1,0 +1,24 @@
+.paymentRecords {
+  .commonCardBg {
+    padding: 20px;
+  }
+  &_table {
+    margin-top: 20px;
+  }
+  &_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    h2 {
+      font-size: var(--headingThree);
+      color: var(--whiteFFF);
+      font-weight: 600;
+    }
+  }
+}
+.downloadcsv {
+  margin: 0;
+  padding: 11px 15px;
+  font-size: var(--largeParaGraph16);
+}

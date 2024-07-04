@@ -1,0 +1,93 @@
+.dashboard {
+  &_detailCard {
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+    &_active {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &_average {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--subtextDarkGray);
+    }
+    .commonCardBg {
+      h4 {
+        font-size: var(--headingTwo);
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+      p {
+        color: var(--subtextDarkGray);
+        font-size: var(--largeParaGraph16);
+        font-weight: 400;
+      }
+      h5 {
+        color: var(--headingTwo);
+        font-size: var(--largeParaGraph16);
+        font-weight: 400;
+      }
+    }
+  }
+  &_report {
+    &_heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .customButton {
+        margin-top: 0;
+        max-width: 150px;
+      }
+      h5 {
+        font-size: var(--largeParaGraph);
+      }
+    }
+    &_subheading {
+      font-size: var(--mediumParaGraph);
+      color: var(--subtextDarkGray);
+      font-weight: 400;
+    }
+    &_detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 23px;
+      border-left: 3px solid rgb(54, 162, 235);
+      padding: 10px 15px;
+      background: var(--loginCardBg);
+      &_left {
+        h6 {
+          font-size: var(--largeParaGraph);
+          color: var(--white);
+          margin-bottom: 6px;
+        }
+        p {
+          font-size: var(--mediumParaGraph);
+          color: var(--textGray);
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+  &_userRegistration {
+    img {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  .timeLineDrop {
+    display: flex;
+    justify-content: end;
+    button {
+      font-size: var(--xtrasmallParagraph);
+      padding: 15px 22px !important;
+    }
+  }
+}
+.transactionChart{
+  margin-top: 30px;
+}

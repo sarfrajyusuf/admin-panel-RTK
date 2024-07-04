@@ -1,0 +1,34 @@
+.subCard {
+  border: 1px solid var(--subtextDarkGray);
+  border-style: dashed;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 5px;
+  @media (max-width:400px) {
+    padding: 8px;
+  }
+  &_top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  span {
+    color: var(--textGray);
+    font-size: var(--largeParaGraph);
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  .anticon-arrow-up {
+    svg {
+      fill: var(--greenbg);
+    }
+  }
+  .anticon-arrow-down {
+    svg {
+      fill: var(--redColor);
+    }
+  }
+}

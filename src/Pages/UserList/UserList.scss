@@ -1,0 +1,51 @@
+.userList {
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .customInput {
+      max-width: 500px;
+      width: 100%;
+    }
+    &_btn {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+        .customButton {
+          max-width: 100% !important;
+        }
+      }
+    }
+    .customButton {
+      max-width: 140px;
+      margin-top: 0 !important;
+      flex-direction: row-reverse;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      font-size: var(--regularParagraph);
+      height: 40px;
+      .anticon {
+        margin-right: 10px;
+      }
+    }
+  }
+  .tableViewBtn {
+    margin-right: 20px;
+  }
+  .delteBtn {
+  text-align: center;
+  svg {
+    cursor: pointer;
+    fill: var(--white);
+  }
+}
+}
+

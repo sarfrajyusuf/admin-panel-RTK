@@ -1,0 +1,41 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media (max-width:991px) {
+    gap: 15px;
+  }
+    &_forget {
+    text-align: end;
+    a {
+      color: var(--whiteFFF);
+      text-decoration: none;
+      &:hover{
+        color: var(--mainTextColor);
+      }
+    }
+  }
+}
+.modal-small {
+  width: 50%; // Adjust the width as needed
+}
+.announcement_top_sendBtn1.disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+  pointer-events: none; /* Disable all pointer events */
+  opacity: 0.6; /* Slightly transparent */
+}
+
+.login {
+  &.blur-background {
+    filter: blur(5px);
+    pointer-events: none; // Prevent interactions with the blurred background
+  }
+}
+
+// Ensure the modal is not affected by the blur
+.modal-center {
+  .ant-modal-content {
+    filter: none;
+  }
+}

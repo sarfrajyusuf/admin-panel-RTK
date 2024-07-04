@@ -1,0 +1,38 @@
+.accountsCard {
+  overflow-y: auto;
+  max-height: 355px;
+  height: 100%;
+  overflow-x: hidden;
+  &_card {
+    width: 300px;
+    display: flex;
+    height: 100px;
+    gap: 20px;
+    align-items: center;
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    h4 {
+      font-size: var(--largeParaGraph);
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+    p {
+      font-size: var(--largeParaGraph);
+      color: var(--textGray);
+    }
+  }
+  &_add {
+    margin-top: 20px;
+    span {
+      cursor: pointer;
+      color: var(--whiteFFF);
+      white-space: nowrap;
+      &:hover {
+        color: var(--mainTextColor);
+        text-shadow: 0px 0px 20px var(--textShadow);
+      }
+    }
+  }
+}

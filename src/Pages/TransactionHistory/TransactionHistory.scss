@@ -1,0 +1,43 @@
+.transactionHistory {
+  &_top {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  &_filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+    @media (max-width: 1390px) {
+      flex-direction: column;
+    }
+    .transSearch {
+      input {
+        height: 44px;
+      }
+    }
+    .downloadcsv {
+      margin: 0;
+      padding: 11px 15px;
+      font-size: var(--largeParaGraph16);
+    }
+    .no-wrap-row {
+      display: flex;
+      flex-flow: nowrap;
+    }
+  }
+}
+.downloadReset {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    padding: 0;
+    margin-top: 0 !important;
+    height: 40px;
+    &:nth-child(2) {
+      min-width: 100px;
+    }
+  }
+}

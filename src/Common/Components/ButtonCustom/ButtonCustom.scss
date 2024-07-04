@@ -1,0 +1,52 @@
+.customButton {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  font-size: var(--largeParaGraph);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  white-space: nowrap;
+  @media (max-width: 767px) {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  &-regular {
+    background: var(--buttonBg);
+    color: var(--whiteFFF);
+    &:hover {
+      background: var(--buttonHoverBg);
+    }
+  }
+  &-gray {
+    background: var(--grayBtnBg);
+    color: var(--mainGrayText);
+    &:hover {
+      color: var(--whiteFFF);
+    }
+  }
+  &-red {
+    background: var(--error);
+    color: var(--whiteFFF);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.editBtn {
+  padding: 8px;
+  background: var(--editBtnbg);
+  margin-top: 0;
+  color: var(--blue);
+  font-size: var(--smallParagraph);
+  font-weight: 400;
+  &:hover {
+    color: var(--white);
+  }
+}

@@ -1,0 +1,27 @@
+.controlReward{
+    &_head{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        &_left{
+            width: 20%;
+            text-align: center;
+        }
+        &_right{
+            width: 80%;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            .customInput{
+                width: 100%;
+            }
+        }
+    }
+    &_saveBtn{
+        text-align: center;
+        .customButton{
+            max-width: 300px;
+
+        }
+    }
+}

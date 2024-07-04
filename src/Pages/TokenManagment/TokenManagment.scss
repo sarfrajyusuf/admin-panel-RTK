@@ -1,0 +1,46 @@
+.ant-modal {
+  max-width: 524px;
+  .ant-modal-header {
+    margin-bottom: 37px;
+  }
+  .tokenModal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    &_symbol {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+    }
+    .customInput {
+      width: 100%;
+    }
+    .action,
+    .ant-space,
+    .ant-btn,
+    .ant-space-item {
+      width: 100%;
+    }
+    .ant-btn {
+      padding: 22px 21px;
+      &:hover {
+        background-color: var(--inputBg) !important;
+      }
+    }
+    .ant-space-item {
+      text-align: left;
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
+.delteBtn {
+  text-align: center;
+  svg {
+    cursor: pointer;
+    fill: var(--white);
+  }
+}

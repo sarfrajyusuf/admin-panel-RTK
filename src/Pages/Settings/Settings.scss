@@ -1,0 +1,90 @@
+.setting {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  .customInput {
+    width: 100%;
+    input {
+      height: 60px;
+      font-size: var(--largeParaGraph16) !important;
+      @media (max-width: 991px) {
+        height: 40px;
+      }
+    }
+  }
+
+  &_left {
+    .customInput {
+      margin-bottom: 20px;
+      label {
+        font-size: var(--headingFour) !important;
+      }
+    }
+    &_btn {
+      display: flex;
+      justify-content: center;
+    }
+    .customButton {
+      max-width: 200px;
+    }
+  }
+  &_right {
+    &_toggle {
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px dashed var(--subtextDarkGray);
+      margin-bottom: 20px;
+    }
+    &_qrCode {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      img {
+        max-width: 200px;
+        width: 100%;
+      }
+
+      &_btn {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
+  }
+  .input-group {
+    margin-bottom: 1em;
+  }
+
+  .error-message {
+    color: #d9534f;
+    font-size: 0.875em;
+    text-align: left; /* Align error messages to the left */
+    margin-top: 0.5em;
+  }
+  .error-message1 {
+    color: red;
+    font-size: 12px;
+    text-align: left; /* Align error messages to the left */
+    margin-top: -10px; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Adjust this value as needed */
+  }
+}
+
+.secret-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+/* Optional: Add margin or padding to separate the text and icon */
+.secret-container span {
+  margin-right: 5px; /* Adjust as needed */
+}
+

@@ -1,0 +1,111 @@
+.sideBar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background: var(--SideBarBlurBg);
+  backdrop-filter: blur(1px);
+  &_closeIcon {
+    text-align: end;
+    cursor: pointer;
+  }
+  &_onRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 40px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    max-width: 480px;
+    width: 100%;
+    background: var(--mainBg);
+    -webkit-box-shadow: var(--boxShadow);
+    -moz-box-shadow: var(--boxShadow);
+    box-shadow: var(--boxShadow);
+    cursor: default;
+    @media (max-width: 767px) {
+      padding: 25px 15px;
+    }
+    &_logout {
+      padding: 20px;
+      a {
+        text-decoration: none;
+        color: var(--mainTextColor);
+
+        font-size: var(--heading28);
+        white-space: nowrap;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: var(--error);
+
+          text-shadow: 0px 0px 20px var(--textShadow);
+        }
+      }
+    }
+  }
+  &_logo {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-bottom: 1px dashed var(--mainGrayText);
+    img {
+      max-width: 279px;
+      width: 100%;
+    }
+    .anticon {
+      cursor: pointer;
+    }
+  }
+  &_menuItem {
+    .displayShow {
+      .headerLink_menu {
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: 767px) {
+          gap: 0;
+        }
+        .subMenu {
+          top: 45px;
+        }
+      }
+    }
+    &_top {
+      padding: 20px;
+      h3 {
+        padding: 20px 0;
+
+        .anticon {
+          margin-right: 10px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: var(--whiteFFF);
+        font-size: var(--heading28);
+        white-space: nowrap;
+        &:hover {
+          color: var(--mainTextColor);
+          text-shadow: 0px 0px 20px var(--textShadow);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1141px) and (max-width: 1920px) {
+  .displayShow {
+    display: none;
+  }
+}
+
+.sideBar {
+  &.blur-background {
+    filter: blur(5px);
+    pointer-events: none; // Prevent interactions with the blurred background
+  }
+}
+
+// Ensure the modal is not affected by the blur
+.ant-modal-content {
+  filter: none;
+}

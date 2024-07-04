@@ -1,0 +1,9 @@
+.detailTabs {
+  color: var(--whiteFFF);
+  margin-top: 30px;
+  .ant-tabs-nav {
+    &::before {
+      border: unset;
+    }
+  }
+}

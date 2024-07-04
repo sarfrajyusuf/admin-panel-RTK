@@ -1,0 +1,33 @@
+.dashLayout {
+  &_heading {
+    padding: 10px 0 15px 0;
+    font-size: var(--headingTwo);
+    font-weight: 300;
+    background: #061220;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    margin-top: 160px;
+    padding-left: 15px;
+    border-left: 3px solid var(--whiteFFF);
+
+    @media (max-width: 1260px) {
+      margin-top: 143px;
+    }
+    @media (max-width: 400px) {
+      margin-top: 140px;
+    }
+  }
+  &_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 107px 20px 20px 20px;
+    width: 100%;
+  }
+  &_body {
+    padding-top: 70px;
+    @media (max-width: 767px) {
+     padding-top: 48px;
+    }
+  }
+}

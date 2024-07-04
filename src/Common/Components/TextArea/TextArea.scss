@@ -1,0 +1,48 @@
+// .CommonTextArea {
+//   margin: 10px 0;
+//   textarea {
+//     width: 100%;
+//     background: var(--inputBg);
+//     color: var(--white);
+//     padding: 15px 24px;
+//     border-radius: 8px;
+//     font-size: var(--largeParaGraph16);
+//     border: none;
+//     outline: unset;
+//     resize: none;
+//     &::placeholder {
+//       color: var(--textGray);
+//     }
+//     &:focus {
+//       outline: 1px solid #008cb1;
+//     }
+//   }
+// }
+
+.CommonTextArea {
+  margin: 10px 0;
+  textarea {
+    width: 100%;
+    background: var(--inputBg);
+    color: var(--white);
+    padding: 15px 24px;
+    border-radius: 8px;
+    font-size: var(--largeParaGraph16);
+    border: none;
+    outline: unset;
+    resize: none;
+    &::placeholder {
+      color: var(--textGray);
+    }
+    &:focus {
+      outline: 1px solid #008cb1;
+    }
+  }
+
+  .error {
+    color: red; /* Set the color of the error message to red */
+    font-size: 14px; /* Adjust the font size if needed */
+    margin-top: 5px; /* Add some space between the textarea and the error message */
+  }
+  
+}

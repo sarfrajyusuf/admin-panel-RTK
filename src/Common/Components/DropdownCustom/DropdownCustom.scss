@@ -1,0 +1,48 @@
+.dropdownCustom {
+
+  .ant-space {
+    height: 40px;
+
+    @media (max-width: 767px) {
+      height: 40px !important;
+    }
+  }
+  label {
+    font-size: var(--largeParaGraph16);
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  button {
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: var(--largeParaGraph16);
+  }
+}
+.action {
+  button {
+    background-color: var(--inputBg);
+    color: var(--whiteFFF);
+    padding: 20px 18px;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+.dropdownBody {
+  background: var(--cardBg) !important;
+  box-shadow: var(--boxShadow) !important;
+  border-radius: 10px !important;
+  width: 100%;
+  padding: 20px !important;
+
+  li {
+    color: var(--whiteFFF) !important;
+    padding: 10px 0 !important;
+    list-style: none;
+  }
+}

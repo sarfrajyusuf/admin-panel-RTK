@@ -1,0 +1,63 @@
+.commonDatepicker {
+  .ant-picker-outlined {
+    background: var(--inputBg);
+    border: none;
+    outline: none;
+    color: var();
+  }
+  .ant-picker {
+    color: var(--whiteFFF) !important;
+    height: 40px;
+  }
+
+  .ant-picker-input > input::placeholder {
+    color: var(--textGray) !important;
+  }
+  .anticon {
+    path {
+      fill: var(--whiteFFF);
+    }
+  }
+  
+}
+.ant-picker-input-placeholder {
+    color: var(--textGray) !important;
+  
+  }
+.ant-picker-dropdown .ant-picker-panel-container {
+  background: var(--inputBg) !important;
+}
+// .ant-picker-content th,
+// .ant-picker-header,
+// .ant-picker-cell,
+// .ant-picker-header-prev-btn,
+// .ant-picker-header-super-prev-btn,
+// .ant-picker-header-next-btn,
+// .ant-picker-header-super-next-btn {
+//   color: var(--whiteFFF) !important;
+// }
+ .ant-picker-content th,
+ .ant-picker-header,
+ .ant-picker-header-prev-btn,
+ .ant-picker-header-super-prev-btn,
+ .ant-picker-header-next-btn,
+ .ant-picker-header-super-next-btn,
+ .ant-picker-cell:not(.ant-picker-cell-disabled) {
+   color: rgb(243, 238, 238) !important;
+   /* Change color to black for future dates */
+ }
+ 
+// .commonDatepicker {
+//   .ant-picker-input {
+//     input {
+//       /* Hide the cursor */
+//       caret-color: transparent;
+//     }
+//   }
+
+  // Style the numbers in the calendar
+//   .ant-picker-cell-inner {
+//     color: rgba(0, 0, 0, 0.65); // Adjust the color of the numbers as needed
+//     pointer-events: none; // Disable pointer events to prevent interaction with numbers
+//   }
+// }
